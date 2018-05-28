@@ -1,8 +1,9 @@
 ## Command Line Bootcamp
 
-### Introduction
+*Original slides and activity were developed by Thomas Padilla and have been lightly altered*
 
-[slides](https://docs.google.com/presentation/d/1ikyXzrrbHEa9JUi14quuGZFMnEkye8tNtKaCVYJawAw/edit?usp=sharing)
+### Introduction
+[Slides here](https://docs.google.com/presentation/d/1ikyXzrrbHEa9JUi14quuGZFMnEkye8tNtKaCVYJawAw/edit?usp=sharing)
 
 During this session you will be introduced to the command line. The
 command line is a text based method for interacting with your computer.
@@ -11,9 +12,7 @@ for our purposes we’ll just be covering:
 
 -   **Navigation** - moving in and out of directories, figuring out
     where you are, etc.
-
 -   **Creation** - creating folders, moving content around
-
 -   **Manipulation** - reading files, renaming files, and more
 
 In what follows I’ll signal commands you should enter with a '$'
