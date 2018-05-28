@@ -1,6 +1,8 @@
 ## Command Line Bootcamp
 
-### Nuts and Bolts
+### Introduction
+
+[slides](https://docs.google.com/presentation/d/1ikyXzrrbHEa9JUi14quuGZFMnEkye8tNtKaCVYJawAw/edit?usp=sharing)
 
 During this session you will be introduced to the command line. The
 command line is a text based method for interacting with your computer.
