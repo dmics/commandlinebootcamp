@@ -229,16 +229,16 @@ You're going to combine this collection with texts from other sources, and you w
 First, we'll take a look at the way a loop works. Type each line in and hit enter.
 
 `$ for file in *.htm`
-we're making "file" a variable that carries each file ending in .htm through the loop
+>we're making "file" a variable that carries each file ending in .htm through the loop
 
 `$ do`
-we're setting a list of instructions for each file
+>we're setting a list of instructions for each file
 
 `$ print $file`
-[**type the $s within the line**] the `$` is used to access the value of the variable - it's just printing the filename
+>[**type the $s within the line**] the `$` is used to access the value of the variable - it's just printing the filename
 
 `$done`
-this signals that we're done with the code and it can all run.
+>this signals that we're done with the code and it can all run.
 
 Now that we see how it works, let's rename the files
 ```
