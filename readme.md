@@ -162,11 +162,7 @@ https://web.archive.org/web/20170819124439/http://digital.lib.ucdavis.edu:80/pro
 
 `$ head BannATales.htm`
 
-----
-
-**MAC OS X ONLY:**
-
-That HTML is annoying. Let’s get rid of it with textutil
+That HTML is annoying. Let’s get rid of it with textutil [**textutil is Mac OS X only!**]
 
 `$ textutil -convert txt *.htm`
 
@@ -175,8 +171,6 @@ That HTML is annoying. Let’s get rid of it with textutil
 `$ rm *htm`
 
 `$ ls`
-
-----
 
 
 rdme.txt is a readme, lets just call it that. rename the file using **mv**
@@ -189,46 +183,12 @@ readme.txt belongs in the project folder, move it up there using **mv**
 
 `$ mv readme.txt ..`
 
-## Searching & Mining
-
-Move back to the poetry books
-
-`$ cd ..`
-
-Find out how many lines and words there are in a text of your choosing using **wc -l -w**
-
-`$ wc -l -w ActoEPoems.htm`
-
-Results:
-
-```
-3861 15603 ActoEPoems.htm
-```
-
-Do some very basic searching with grep
-
-`$ grep europe *htm`
-
-`$ grep Europe *htm`
-
-`$ grep America *htm`
-
-Do some very basic counting with **grep -c**
-
-`$ grep -c man *htm`
-
-`$ grep -c woman *htm`
-
-Count only whole words using **grep -cw**
-
-`$ grep -cw man *htm`
-
 ## Creating a Loop
 You're going to combine this collection with texts from other sources, and you want to remember that you got these from UC Davis's BWRP (British Women Romantic Poets) project. Why don't we add 'bwrp' to the beginning of each filename?
 
 First, we'll take a look at the way a loop works. Type each line in and hit enter.
 
-`$ for file in *.htm`
+`$ for file in *.txt`
 >we're making "file" a variable that carries each file ending in .htm through the loop
 
 `$ do`
@@ -242,7 +202,7 @@ First, we'll take a look at the way a loop works. Type each line in and hit ente
 
 Now that we see how it works, let's rename the files
 ```
-$ for file in *.htm
+$ for file in *.txt
 $ do                  
 $ mv $file bwrp_$file
 ```
