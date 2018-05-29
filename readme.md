@@ -224,23 +224,27 @@ Count only whole words using **grep -cw**
 `$ grep -cw man *htm`
 
 ## Creating a Loop
-You're going to combine this collection with texts from other sources, and you want to remember that you got these from UC Davis's BWRP (British Women Romantic Poets) project. Why don't we add 'bwrp' to the beginning of each filename? Hit enter after each line:
+You're going to combine this collection with texts from other sources, and you want to remember that you got these from UC Davis's BWRP (British Women Romantic Poets) project. Why don't we add 'bwrp' to the beginning of each filename?
 
-*first, we'll take a look at the way a loop works*
+First, we'll take a look at the way a loop works. Type each line in and hit enter.
 
-`$ for file in *.htm`    we're making "file" a variable that carries each file ending in .htm through the loop
+`$ for file in *.htm`
+we're making "file" a variable that carries each file ending in .htm through the loop
 
-`$ do`                   we're setting a list of instructions for each file
+`$ do`
+we're setting a list of instructions for each file
 
-`$ print $file`          [**type the $s within the line**] the `$` is used to access the value of the variable - it's just printing the filename
+`$ print $file`
+[**type the $s within the line**] the `$` is used to access the value of the variable - it's just printing the filename
 
-`$done`                  this signals that we're done with the code and it can all run.
+`$done`
+this signals that we're done with the code and it can all run.
 
-*now let's rename the files
+Now that we see how it works, let's rename the files
 ```
-$ for file in *.htm`
-`$ do`                   
-`$ mv $file bwrp_$file`
+$ for file in *.htm
+$ do                  
+$ mv $file bwrp_$file
 ```
 this renames each file with 'bwrp_' followed by the filename it had already
 `$done`
