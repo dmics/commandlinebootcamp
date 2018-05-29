@@ -146,7 +146,7 @@ Display the first and last ten lines of a text using **head** / **tail**
 
 Whoops, it looks like you forgot a book. Fix that with **curl**
 
-[Note: The BWRP is temporarily offline, so we’re using a version stored at the Internet Archive\]
+[Note: The BWRP is temporarily offline, so we’re using a version stored at the Internet Archive]
 
 `$ curl
 https://web.archive.org/web/20170819124439/http://digital.lib.ucdavis.edu:80/projects/bwrp/Works/BannATales.htm`
@@ -189,7 +189,7 @@ readme.txt belongs in the project folder, move it up there using **mv**
 
 `$ mv readme.txt ..`
 
-### Searching & Mining
+## Searching & Mining
 
 Move back to the poetry books
 
@@ -217,15 +217,35 @@ Do some very basic counting with **grep -c**
 
 `$ grep -c man *htm`
 
-`$ grep -c woman \*htm`
+`$ grep -c woman *htm`
 
 Count only whole words using **grep -cw**
 
 `$ grep -cw man *htm`
 
-### Further Resources
+## Creating a Loop
+You're going to combine this collection with texts from other sources, and you want to remember that you got these from UC Davis's BWRP (British Women Romantic Poets) project. Why don't we add 'bwrp' to the beginning of each filename? Hit enter after each line:
+
+*first, we'll take a look at the way a loop works*
+
+`$ for file in *.htm`    we're making "file" a variable that carries each file ending in .htm through the loop
+`$ do`                   we're setting a list of instructions for each file
+`$ print $file`          [**type the $s within the line**] the `$` is used to access the value of the variable - it's just printing the filename
+`$done`                  this signals that we're done with the code and it can all run.
+
+*now let's rename the files
+
+`$ for file in *.htm`
+`$ do`                   
+`$ mv $file bwrp_$file`  this renames each file with 'bwrp_' followed by the filename it had already
+`$done`
+
+
+## Further Resources
 
 [*Sourcecaster*](https://datapraxis.github.io/sourcecaster/)
+
+Library Carpentry. [Shell Lessons for Librarians](https://librarycarpentry.github.io/lc-shell/)
 
 Idan Kamara, [*Explain Shell*](http://explainshell.com/)
 
