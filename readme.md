@@ -229,15 +229,20 @@ You're going to combine this collection with texts from other sources, and you w
 *first, we'll take a look at the way a loop works*
 
 `$ for file in *.htm`    we're making "file" a variable that carries each file ending in .htm through the loop
+
 `$ do`                   we're setting a list of instructions for each file
+
 `$ print $file`          [**type the $s within the line**] the `$` is used to access the value of the variable - it's just printing the filename
+
 `$done`                  this signals that we're done with the code and it can all run.
 
 *now let's rename the files
-
-`$ for file in *.htm`
+```
+$ for file in *.htm`
 `$ do`                   
-`$ mv $file bwrp_$file`  this renames each file with 'bwrp_' followed by the filename it had already
+`$ mv $file bwrp_$file`
+```
+this renames each file with 'bwrp_' followed by the filename it had already
 `$done`
 
 
