@@ -83,7 +83,7 @@ Navigate to your home directory using change directory **cd**
 
 Move Archive.zip file into the corpora folder using **mv** and a path
 
-`$ mv Desktop/archive.zip Desktop/project/corpora`
+`$ mv Desktop/dmics-texts.zip Desktop/project/corpora`
 
 Navigate back down to corpora using **cd** and a path
 
@@ -91,11 +91,11 @@ Navigate back down to corpora using **cd** and a path
 
 ## Manipulation
 
-By this point we’ve figured out how to find our breadcrumbs if we got lost (pwd), and how to figure out what’s around us (ls), how to move up and down levels (cd / cd .. ), how to create new folders, and how to move content into different folders. Now we are going to engage in a bit of basic manipulation of content within the Archive.zip file you downloaded at the beginning of the workshop, currently residing in the corpora folder that you created in the previous section.
+By this point we’ve figured out how to find our breadcrumbs if we got lost (pwd), and how to figure out what’s around us (ls), how to move up and down levels (cd / cd .. ), how to create new folders, and how to move content into different folders. Now we are going to engage in a bit of basic manipulation of content within the dmics-texts.zip file you downloaded at the beginning of the workshop, currently residing in the corpora folder that you created in the previous section.
 
-Unzip the Archive.zip file in the corpora folder using **unzip**
+Unzip the dmics-texts.zip file in the corpora folder using **unzip**
 
-`$ unzip archive.zip`
+`$ unzip dmics-texts.zip`
 
 `$ ls`
 
@@ -113,12 +113,12 @@ rdme.txt
 AikilEpist.htm
 LadyAOrigi.htm
 ladyaelija.htm
-archive.zip
+dmics-texts.zip
 ```
 
 You probably don't need that zip anymore get rid of it using remove **rm**
 
-`$ rm archive.zip`
+`$ rm dmics-texts.zip`
 
 `$ ls`
 
@@ -172,7 +172,6 @@ That HTML is annoying. Let’s get rid of it with textutil [**textutil is Mac OS
 
 `$ ls`
 
-
 rdme.txt is a readme, lets just call it that. rename the file using **mv**
 
 `$ mv rdme.txt readme.txt`
@@ -184,7 +183,7 @@ readme.txt belongs in the project folder, move it up there using **mv**
 `$ mv readme.txt ..`
 
 ## Creating a Loop
-You're going to combine this collection with texts from other sources, and you want to remember that you got these from UC Davis's BWRP (British Women Romantic Poets) project. Why don't we add 'bwrp' to the beginning of each filename?
+You're going to combine this collection with texts from other sources, and you want to remember that you got these from UC Davis's [BWRP (British Women Romantic Poets)](http://digital.lib.ucdavis.edu/projects/bwrp/) project. Why don't we add 'bwrp' to the beginning of each filename?
 
 First, we'll take a look at the way a loop works. Type each line in and hit enter.
 
@@ -206,7 +205,8 @@ $ for file in *.txt
 $ do                  
 $ mv $file bwrp_$file
 ```
-this renames each file with 'bwrp_' followed by the filename it had already
+>this renames each file with 'bwrp_' followed by the filename it had already
+
 `$done`
 
 
