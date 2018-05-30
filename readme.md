@@ -80,7 +80,7 @@ Navigate to your home directory using change directory **cd**
 
 `$ cd`
 
-Move Archive.zip file into the corpora folder using **mv** and a path
+Move dmics-texts.zip file into the corpora folder using **mv** and a path
 
 `$ mv Desktop/dmics-texts.zip Desktop/project/corpora`
 
@@ -102,39 +102,45 @@ Result:
 
 ```
 ActoEPoems.htm
-BailJColle.htm
-sevenagesofwoman
-ladyavarie.htm
 AddiRPoetr.htm
+AikiLEpist.htm
+BailJColle.htm
 BailJFamil.htm
-iriswmagic.htm
-rdme.txt
-AikilEpist.htm
 LadyAOrigi.htm
-ladyaelija.htm
+__MACOSX
 dmics-texts.zip
+iriswmagic.htm
+ladyaelija.htm
+ladyavarie.htm
+rdme.txt
+sevenagesofwoman
 ```
 
 You probably don't need that zip anymore get rid of it using remove **rm**
 
 `$ rm dmics-texts.zip`
 
+The folder `__MACOSX` is an annoying add-in you get when you zip something on Mac OS X. Let's remove that.
+
+`$ rm -r __MACOSX`
+>*the -r flag is recursive—since we're removing a folder, we want to remove the folder and everything in it*
+
 `$ ls`
 
-Result;
+Result:
 
 ```
 ActoEPoems.htm
-BailJColle.htm
-sevenagesofwoman
-ladyavarie.htm
 AddiRPoetr.htm
+AikiLEpist.htm
+BailJColle.htm
 BailJFamil.htm
-iriswmagic.htm
-rdme.txt
-AikilEpist.htm
 LadyAOrigi.htm
+iriswmagic.htm
 ladyaelija.htm
+ladyavarie.htm
+rdme.txt
+sevenagesofwoman
 ```
 
 Display the first and last ten lines of a text using **head** / **tail**
@@ -192,10 +198,10 @@ First, we'll take a look at the way a loop works. Type each line in and hit ente
 `$ do`
 >we're setting a list of instructions for each file
 
-`$ print $file`
+`$ echo $file`
 >[**type the $s within the line**] the `$` is used to access the value of the variable - it's just printing the filename
 
-`$done`
+`$ done`
 >this signals that we're done with the code and it can all run.
 
 Now that we see how it works, let's rename the files
@@ -203,10 +209,11 @@ Now that we see how it works, let's rename the files
 $ for file in *.txt
 $ do                  
 $ mv $file bwrp_$file
+$ done
 ```
->this renames each file with 'bwrp_' followed by the filename it had already
+> this renames each file with 'bwrp_' followed by the filename it had already
 
-`$done`
+`$ ls`
 
 
 ## Further Resources
