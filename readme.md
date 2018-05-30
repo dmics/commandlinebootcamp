@@ -3,6 +3,8 @@
 *Original slides and activity were developed by Thomas Padilla and have been lightly altered*
 
 ### Introduction
+**Before we start, download our [sample texts](https://github.com/dmics/commandlinebootcamp/blob/master/dmics-texts.zip) and put the .zip file on the Desktop.**
+
 [Slides here](https://docs.google.com/presentation/d/1ikyXzrrbHEa9JUi14quuGZFMnEkye8tNtKaCVYJawAw/edit?usp=sharing)
 
 During this session you will be introduced to the command line. The
@@ -18,12 +20,9 @@ for our purposes we’ll just be covering:
 In what follows I’ll signal commands you should enter with a '$'
 symbol. Only enter the text that comes after the ‘$’. Note that capitalization matters!
 
-Download the following file to your desktop -
-[***archive.zip***]@@update this link later@@
-
 For OS X users open the **Terminal** program.
 
-For Windows users, open a program called **Gitbash.**
+For Windows users, open a program called **[Gitbash](https://gitforwindows.org/).**
 
 ### Protips
 
